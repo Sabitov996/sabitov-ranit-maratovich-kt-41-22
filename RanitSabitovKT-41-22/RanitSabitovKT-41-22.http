@@ -1,0 +1,6 @@
+@RanitSabitovKT_41_22_HostAddress = http://localhost:5200
+
+GET {{RanitSabitovKT_41_22_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
