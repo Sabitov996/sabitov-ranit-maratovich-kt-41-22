@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("RanitSabitovKT-41-22")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("RanitSabitovKt-41-22")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91c069572a6d233644b1705d53f9d9e22df81f6e")]
-[assembly: System.Reflection.AssemblyProductAttribute("RanitSabitovKT-41-22")]
-[assembly: System.Reflection.AssemblyTitleAttribute("RanitSabitovKT-41-22")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5a180b4b4b3374ab6cf5b2df56de419f2300653")]
+[assembly: System.Reflection.AssemblyProductAttribute("RanitSabitovKt-41-22")]
+[assembly: System.Reflection.AssemblyTitleAttribute("RanitSabitovKt-41-22")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace RanitSabitovKT_41_22.Controllers
+namespace RanitSabitovKt_41_22.Controllers
 {
     [ApiController]
     [Route("[controller]")]

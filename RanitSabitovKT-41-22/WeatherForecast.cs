@@ -1,4 +1,4 @@
-namespace RanitSabitovKT_41_22
+namespace RanitSabitovKt_41_22
 {
     public class WeatherForecast
     {
