@@ -11,7 +11,10 @@ namespace RanitSabitovKt_41_22.ServiceExtensions
     {
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
+            services.AddScoped<IDepartmentService, DepartmentService>();
             services.AddScoped<ITeacherService, TeacherService>();
+            services.AddScoped<IDisciplineService, DisciplineService>();
+            services.AddScoped<IWorkloadService, WorkloadService>();
             return services;
         }
     }

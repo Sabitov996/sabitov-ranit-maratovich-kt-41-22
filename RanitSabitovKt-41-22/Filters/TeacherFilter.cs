@@ -2,7 +2,8 @@
 {
     public class TeacherFilter
     {
-        public int? DepartmentId { get; set; } // фильтр по кафедре
-        public int? AcademicDegreeId { get; set; } // фильтр по ученой степени
+        public int? DepartmentId { get; set; }
+        public int? AcademicDegreeId { get; set; }
+        public int? StaffId { get; set; }
     }
 }

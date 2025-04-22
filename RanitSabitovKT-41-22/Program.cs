@@ -23,6 +23,8 @@ try
         options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
     });
     builder.Services.AddScoped<ITeacherService, TeacherService>();
+    builder.Services.AddServices();
+
 
     var app = builder.Build();
     if (app.Environment.IsDevelopment())

@@ -1,8 +1,162 @@
 [
   {
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.DepartmentController",
+    "Method": "AddDepartment",
+    "RelativePath": "Department/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RanitSabitovKt_41_22.Filters.DepartmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.DepartmentController",
+    "Method": "DeleteDepartment",
+    "RelativePath": "Department/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.DepartmentController",
+    "Method": "UpdateDepartment",
+    "RelativePath": "Department/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "RanitSabitovKt_41_22.Filters.DepartmentUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.DisciplineController",
+    "Method": "AddDiscipline",
+    "RelativePath": "Discipline/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RanitSabitovKt_41_22.Filters.DisciplineCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.DisciplineController",
+    "Method": "DeleteDiscipline",
+    "RelativePath": "Discipline/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.DisciplineController",
+    "Method": "GetDisciplinesAsync",
+    "RelativePath": "Discipline/filter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "RanitSabitovKt_41_22.Filters.DisciplineFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.DisciplineController",
+    "Method": "UpdateDiscipline",
+    "RelativePath": "Discipline/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "RanitSabitovKt_41_22.Filters.DisciplineUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RanitSabitovKt_41_22.Controllers.TeacherController",
-    "Method": "GetTeachersByFilterAsync",
-    "RelativePath": "Teacher",
+    "Method": "AddTeacher",
+    "RelativePath": "Teacher/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RanitSabitovKt_41_22.Filters.TeacherCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.TeacherController",
+    "Method": "DeleteTeacher",
+    "RelativePath": "Teacher/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.TeacherController",
+    "Method": "GetTeachersAsync",
+    "RelativePath": "Teacher/filter",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -13,55 +167,80 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [],
-    "EndpointName": "GetTeachersByFilter"
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "RanitSabitovKt_41_22.Controllers.WeatherForecastController",
-    "Method": "AddNewSummary",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.TeacherController",
+    "Method": "UpdateTeacher",
+    "RelativePath": "Teacher/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "RanitSabitovKt_41_22.Filters.TeacherUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.WorkloadController",
+    "Method": "AddWorkload",
+    "RelativePath": "Workload/add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "newSummary",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "dto",
+        "Type": "RanitSabitovKt_41_22.Filters.WorkloadDto",
+        "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String[]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "AddNewSummary"
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "RanitSabitovKt_41_22.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.WorkloadController",
+    "Method": "GetWorkloadsAsync",
+    "RelativePath": "Workload/filter",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[RanitSabitovKt_41_22.WeatherForecast, RanitSabitovKt-41-22, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "filter",
+        "Type": "RanitSabitovKt_41_22.Filters.WorkloadFilter",
+        "IsRequired": true
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.WorkloadController",
+    "Method": "UpdateWorkload",
+    "RelativePath": "Workload/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "RanitSabitovKt_41_22.Filters.WorkloadDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

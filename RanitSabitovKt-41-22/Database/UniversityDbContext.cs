@@ -44,6 +44,17 @@ namespace RanitSabitovKt_41_22.Database
                 .HasOne(w => w.Discipline)
                 .WithMany(d => d.Workloads)
                 .HasForeignKey(w => w.DisciplineId);
+
+            modelBuilder.Entity<Department>()
+                .HasOne(d => d.HeadTeacher)
+                .WithMany()
+                .HasForeignKey(d => d.HeadTeacherId)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Teacher>()
+                .HasOne(t => t.Department)
+                .WithMany(d => d.Teachers)
+                .HasForeignKey(t => t.DepartmentId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
