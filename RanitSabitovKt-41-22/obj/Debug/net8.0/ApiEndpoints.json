@@ -1,5 +1,22 @@
 [
   {
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.TeacherController",
+    "Method": "GetTeachersByFilterAsync",
+    "RelativePath": "Teacher",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "RanitSabitovKt_41_22.Filters.TeacherFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetTeachersByFilter"
+  },
+  {
     "ContainingType": "RanitSabitovKt_41_22.Controllers.WeatherForecastController",
     "Method": "AddNewSummary",
     "RelativePath": "WeatherForecast",

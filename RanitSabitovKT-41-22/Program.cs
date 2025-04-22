@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
 using RanitSabitovKt_41_22.Database;
+using RanitSabitovKt_41_22.Interfaces;
+using RanitSabitovKt_41_22.ServiceExtensions;
 
 var builder = WebApplication.CreateBuilder(args);
 var logger = LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
@@ -10,16 +12,19 @@ try
 {
     builder.Logging.ClearProviders();
     builder.Host.UseNLog();
-    // Add services to the container.
     builder.Services.AddControllers();
-    // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
     builder.Services.AddDbContext<UniversityDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+    });
+    builder.Services.AddScoped<ITeacherService, TeacherService>();
 
     var app = builder.Build();
-    // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())
     {
         app.UseSwagger();

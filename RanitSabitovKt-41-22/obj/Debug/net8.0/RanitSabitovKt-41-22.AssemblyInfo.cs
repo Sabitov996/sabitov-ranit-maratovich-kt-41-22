@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RanitSabitovKt-41-22")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c4dac4fac83995be1638d4bb78020be327ebee2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+301ba4b2edc29f4694ac76dd1dd3c2756839e52d")]
 [assembly: System.Reflection.AssemblyProductAttribute("RanitSabitovKt-41-22")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RanitSabitovKt-41-22")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
