@@ -27,19 +27,13 @@ namespace RanitSabitovKt_41_22.Interfaces
                 .Include(t => t.Staff)
                 .AsQueryable();
 
-            if (filter.DepartmentId.HasValue)
+            if (filter.DepartmentId.HasValue || filter.AcademicDegreeId.HasValue || filter.StaffId.HasValue)
             {
-                query = query.Where(t => t.DepartmentId == filter.DepartmentId.Value);
-            }
-
-            if (filter.AcademicDegreeId.HasValue)
-            {
-                query = query.Where(t => t.AcademicDegreeId == filter.AcademicDegreeId.Value);
-            }
-
-            if (filter.StaffId.HasValue)
-            {
-                query = query.Where(t => t.StaffId == filter.StaffId.Value);
+                query = query.Where(t =>
+                    (filter.DepartmentId.HasValue && t.DepartmentId == filter.DepartmentId.Value) ||
+                    (filter.AcademicDegreeId.HasValue && t.AcademicDegreeId == filter.AcademicDegreeId.Value) ||
+                    (filter.StaffId.HasValue && t.StaffId == filter.StaffId.Value)
+                );
             }
 
             return await query.ToListAsync(cancellationToken);

@@ -458,6 +458,28 @@
           }
         }
       }
+    },
+    "/Workload/headteachers-by-discipline-name/{disciplineName}": {
+      "get": {
+        "tags": [
+          "Workload"
+        ],
+        "parameters": [
+          {
+            "name": "disciplineName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -526,6 +548,16 @@
             "nullable": true
           },
           "workloadMax": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "minWorkloadHours": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "maxWorkloadHours": {
             "type": "integer",
             "format": "int32",
             "nullable": true

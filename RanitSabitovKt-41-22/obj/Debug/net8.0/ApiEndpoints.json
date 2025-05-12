@@ -224,6 +224,22 @@
   },
   {
     "ContainingType": "RanitSabitovKt_41_22.Controllers.WorkloadController",
+    "Method": "GetHeadTeachersByDisciplineName",
+    "RelativePath": "Workload/headteachers-by-discipline-name/{disciplineName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "disciplineName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RanitSabitovKt_41_22.Controllers.WorkloadController",
     "Method": "UpdateWorkload",
     "RelativePath": "Workload/update/{id}",
     "HttpMethod": "PUT",

@@ -1,9 +1,12 @@
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
 using RanitSabitovKt_41_22.Database;
 using RanitSabitovKt_41_22.Interfaces;
 using RanitSabitovKt_41_22.ServiceExtensions;
+using RanitSabitovKt_41_22.Middlewares;
+
 
 var builder = WebApplication.CreateBuilder(args);
 var logger = LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
@@ -32,7 +35,7 @@ try
         app.UseSwagger();
         app.UseSwaggerUI();
     }
-
+    app.UseMiddleware<CustomExceptionHandlerMiddleware>();
     app.UseAuthorization();
     app.MapControllers();
 
@@ -41,7 +44,9 @@ try
 catch (Exception ex)
 {
     logger.Error(ex, "Stopped program because of exception");
+    throw;
 }
+
 finally
 {
     LogManager.Shutdown();
